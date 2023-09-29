@@ -1,0 +1,115 @@
+.bg {
+    background-color: black;
+    background-image: url("../../../assets/images/backgrounds/computer-tree-nature-forest-wood-technology-796217-pxhere.com-mobilo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.lamina {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.fade-in {
+    background-image: var(--gradiente-verde);
+    background-clip: text;
+    color: transparent;
+
+    opacity: 0; /* Inicialmente, o elemento é invisível */
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+
+  
+
+.content {
+    align-items: center;
+    //justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Fleur De Leah', cursive;
+    background-image: var(--gradiente-verde);
+    background-clip: text;
+    color: transparent;
+
+    .left-side {
+        flex-direction: column;
+        height: 50%;
+        justify-content: space-evenly;
+
+        h1 {
+            font-size: 80px;
+            //font-family: inherit;
+            background-image: inherit;
+            background-clip: inherit;
+            color: inherit;
+            
+
+
+            span {
+                font-family: 'Fleur De Leah', cursive;
+                margin-right: 10px;
+                font-size: 2em;
+                
+            }
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            //margin-left: 150px;
+            text-align: right;
+            margin-right: 135px;
+        }
+    }
+
+    .bottom{
+        text-align: center;
+        
+        button {
+            font-size: 25px;
+            text-align: justify;
+            line-height: 1.2em;
+            font-family: 'Roboto', sans-serif;
+            animation-delay: 2s;
+            border-radius: 20px;
+            border-color: rgba(132, 188, 141, 1);
+            color: rgba(132, 188, 141, 1);
+            padding: 15px;
+            transform: scale(1);
+        transition: transform 0.3s;
+            
+        }
+
+        a{
+            background-image: var(--gradiente-verde);
+            background-clip: text;
+            color: transparent;
+        }
+
+        button:hover{
+            transform: scale(1.1);
+            transition: 250ms ease;
+        }
+    }
+}
+
+
+
+
+@media (min-width:992px) {
+    .bg {
+        //background-image: url("../../../assets/images/backgrounds/coding-laptop-paisagem.jpg");
+        background-image: url("../../../assets/images/backgrounds/computer-tree-nature-forest-wood-technology-796217-pxhere.com.jpg");
+    }
+}

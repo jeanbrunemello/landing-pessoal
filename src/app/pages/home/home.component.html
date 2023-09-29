@@ -1,0 +1,38 @@
+<div class="bg container-fluid">
+
+</div>
+<div class="lamina container-fluid">
+
+</div>
+
+<div class="container-fluid main">
+    <app-navbar></app-navbar>
+    <div class="container">
+        <div class="content d-flex ">
+            <!-- <div class="content d-flex col-lg-6 col"> -->
+            <div class="left-side d-flex col-lg-6 col fade-in">
+                <div class="top">
+                    <h1 class=""><span>J</span>ean Brune</h1>
+                    <p class="fade-in-down" >Desenvolvedor fullstack</p>
+                </div>
+                <div class="bottom">
+                    
+                        <a routerLink="/home/sobre" ><button class="fade-in btn btn-primary btn-lg">Saiba mais sobre mim</button></a> 
+                    
+                    
+                </div>
+            </div>
+            <div class="right-side col" >
+                <router-outlet></router-outlet>
+                <!-- 
+                    <div class="content">
+                        <h1>Olá,</h1>
+                        <h2>
+                            Já que está aqui, por que não aproveita para <a routerLink="/sobre">saber mais</a> sobre mim?
+                        </h2>
+                        
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,33 @@
+.content {
+    animation: fadeIn 0.8s ease-in-out forwards;
+    background-image: var(--gradiente-verde);
+    background-clip: text;
+    height: 66vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .top {
+        p {
+            font-size: 20px;
+            line-height: 25px;
+            text-align: left;
+            font-family: roboto;
+            text-align: center;
+        }
+    }
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    
+    h2 {
+        font-family: var(--fleur);
+        font-size: 50px;
+        line-height: 55px;
+        text-align: end;
+    }
+}

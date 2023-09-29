@@ -1,0 +1,45 @@
+mat-toolbar {
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+
+    .logo {
+        font-family: 'Fleur De Leah', cursive;
+        font-size: 45px;
+        margin-bottom: 5px;
+        background-image: linear-gradient(185deg, rgba(255, 255, 255, 1) 1%, rgba(9, 121, 28, 1) 100%);
+        background-clip: text;
+        color: transparent;
+
+        span {
+            background-image: inherit;
+            background-clip: text;
+            color: transparent;
+            animation: blink 900ms infinite;
+        }
+    }
+
+    .nav-links {
+
+        a {
+            background-image: var(--gradiente-verde);
+            background-clip: text;
+            color: transparent;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+    }
+
+}
