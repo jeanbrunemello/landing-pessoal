@@ -11,13 +11,17 @@
         </div>
     </div> -->
 
-        <div *ngFor="let habilidade of habilidades" class="top col-lg-5">
+        <div *ngFor="let tecnologia of tecnologias" class="top col-lg-5">
+            <div class="item">
+                <img src="{{tecnologia.logo}}{{tecnologia.tecnologia}}.png" alt="" style="width: 64px; height: 64px">
+            </div>
             <p>
-                {{habilidade.habilidade}}
+                {{tecnologia.tecnologia}}
             </p>
         </div>
+
         
         <div class="bottom">
-            <h2 class="">Habilidades</h2>
+            <h2 class="">Tecnologias</h2>
         </div>
     </div>

@@ -13,6 +13,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { ModeloComponent } from './pages/modelo/modelo.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
+import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
     SobreComponent,
     ModeloComponent,
     HabilidadesComponent,
+    TecnologiasComponent,
   ],
   imports: [
     BrowserModule,

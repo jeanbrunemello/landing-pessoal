@@ -7,8 +7,15 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
+
+
+
 
     .top {
+
+        flex-basis: calc(33.3333% - 20px); /* Ajuste a largura conforme necessário, incluindo margens */
+        margin: 10px; /* Adicione margens conforme necessário */
         p {
             font-size: 20px;
             line-height: 25px;
@@ -19,7 +26,9 @@
     }
 }
 
-
+.top {
+   
+}
 
 
 .bottom {
