@@ -14,6 +14,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import { ModeloComponent } from './pages/modelo/modelo.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TecnologiasComponent } from './components/tecnologias/tecnologias.compo
     ModeloComponent,
     HabilidadesComponent,
     TecnologiasComponent,
+    ContatoComponent,
   ],
   imports: [
     BrowserModule,

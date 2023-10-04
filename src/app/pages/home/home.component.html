@@ -10,28 +10,23 @@
     <div class="container">
         <div class="content d-flex ">
             <!-- <div class="content d-flex col-lg-6 col"> -->
-            <div class="left-side d-flex col-lg-6 col fade-in">
+            <div class="left-side d-flex col-lg-6 col col fade-in">
                 <div class="top">
                     <h1 class=""><span>J</span>ean Brune</h1>
-                    <p class="fade-in-down" >Desenvolvedor fullstack</p>
+                    <p class="fade-in-down">Desenvolvedor fullstack</p>
                 </div>
                 <div class="bottom">
-                    
-                        <a routerLink="/home/sobre" ><button class="fade-in btn btn-primary btn-lg">Saiba mais sobre mim</button></a> 
-                    
-                    
+                    <ng-template #sobre>
+                        <a *ngIf="rotaAtual == '/home' || rotaAtual == '/home/contato' " routerLink="/home/sobre" ><button class="fade-in btn btn-primary btn-lg delay-zero">Saiba mais sobre mim</button></a>
+                    </ng-template>
+                    <a *ngIf="rotaAtual == '' " routerLink="/home/sobre" ><button class="fade-in btn btn-primary btn-lg">Saiba mais sobre mim</button></a>
+                        <a *ngIf="rotaAtual == '/home/sobre'; else sobre" routerLink="/home/habilidades" ><button class="fade-in btn btn-primary btn-lg delay-zero">Competências</button></a>
+                        <a *ngIf="rotaAtual == '/home/habilidades'" routerLink="/home/tecnologias" ><button class="fade-in btn btn-primary btn-lg delay-zero">Tecnologias</button></a>
+                        <a *ngIf="rotaAtual == '/home/tecnologias'" routerLink="/home/contato" ><button class="fade-in btn btn-primary btn-lg delay-zero">Contato</button></a>
                 </div>
             </div>
             <div class="right-side col" >
                 <router-outlet></router-outlet>
-                <!-- 
-                    <div class="content">
-                        <h1>Olá,</h1>
-                        <h2>
-                            Já que está aqui, por que não aproveita para <a routerLink="/sobre">saber mais</a> sobre mim?
-                        </h2>
-                        
-                    </div> -->
                 </div>
             </div>
         </div>

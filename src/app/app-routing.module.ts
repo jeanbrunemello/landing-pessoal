@@ -6,6 +6,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import { ModeloComponent } from './pages/modelo/modelo.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,10 @@ const routes: Routes = [
       {
         path: 'tecnologias',
         component: TecnologiasComponent,
+      },
+      {
+        path: 'contato',
+        component: ContatoComponent,
       },
       // {
       //   path: "**",

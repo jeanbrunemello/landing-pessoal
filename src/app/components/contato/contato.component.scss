@@ -5,13 +5,21 @@
     height: 66vh;
     display: flex;
     flex-wrap: wrap;
+    //justify-content: space-around;
     align-items: center;
-    justify-content: space-evenly;
     text-align: center;
 
     .top {
-        flex-basis: calc(33.3333% - 20px); /* Ajuste a largura conforme necessário, incluindo margens */
-        margin: 10px; /* Adicione margens conforme necessário */
+        //flex-basis: calc(33.3333% - 20px);
+        margin: 10px;
+
+
+        a {
+            background-image: var(--gradiente-verde);
+            background-clip: text;
+            color: transparent;
+        }
+
         p {
             font-size: 20px;
             line-height: 25px;
@@ -20,11 +28,13 @@
             text-align: center;
         }
 
-        img{
+        img {
             transform: scale(1);
             transition: transform 250ms ease;
+            filter: invert(76%) sepia(27%) saturate(311%) hue-rotate(79deg) brightness(95%) contrast(89%);
         }
-        img:hover{
+
+        img:hover {
             transform: scale(1.2);
         }
     }
@@ -34,7 +44,7 @@
     display: flex;
     width: 100%;
     justify-content: end;
-    
+
     h2 {
         font-family: var(--fleur);
         font-size: 50px;
