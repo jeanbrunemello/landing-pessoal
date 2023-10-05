@@ -2,7 +2,7 @@
     animation: fadeIn 0.8s ease-in-out forwards;
     background-image: var(--gradiente-verde);
     background-clip: text;
-    height: 66vh;
+    //height: 66vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -10,17 +10,19 @@
     text-align: center;
 
     .top {
-        flex-basis: calc(33.3333% - 20px); /* Ajuste a largura conforme necessário, incluindo margens */
-        margin: 10px; /* Adicione margens conforme necessário */
+        flex-basis: calc(33.3333%); /* Ajuste a largura conforme necessário, incluindo margens */
+        //margin: 10px; /* Adicione margens conforme necessário */
         p {
-            font-size: 20px;
-            line-height: 25px;
+            font-size: 14px;
+            line-height: 15px;
             text-align: left;
             font-family: roboto;
             text-align: center;
         }
 
         img{
+            width: 48px;
+            height: 48px;
             transform: scale(1);
             transition: transform 250ms ease;
         }
