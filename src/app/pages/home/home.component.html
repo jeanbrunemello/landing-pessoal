@@ -10,28 +10,47 @@
     <div class="container">
         <div class="content">
             <!-- <div class="content d-flex col-lg-6 col"> -->
-            <div class="left-side d-flex col-lg-6 col col fade-in">
-                <div class="top">
+            <div class="left-side d-flex col-md-12 col-lg-10 col fade-in">
+                <div class="top col-md-5">
                     <h1 class="to-top"><span>J</span>ean Brune</h1>
                     <p class="fade-in-down">Desenvolvedor fullstack</p>
+                    <div class="btn" *ngIf="isScreen768pxOrLarger()">
+                        <ng-template #sobre>
+                            <a *ngIf="rotaAtual == '/home' || rotaAtual == '/home/contato' "
+                                routerLink="/home/sobre"><button class="fade-in btn btn-primary btn-lg delay-zero">
+                                    Sobre mim</button></a>
+                        </ng-template>
+                        <a *ngIf="rotaAtual == '' " routerLink="/home/sobre"><button
+                                class="fade-in btn btn-primary btn-lg">Mais sobre mim</button></a>
+                        <a *ngIf="rotaAtual == '/home/sobre'; else sobre" routerLink="/home/habilidades"><button
+                                class="fade-in btn btn-primary btn-lg delay-zero">Competências</button></a>
+                        <a *ngIf="rotaAtual == '/home/habilidades'" routerLink="/home/tecnologias"><button
+                                class="fade-in btn btn-primary btn-lg delay-zero">Tecnologias</button></a>
+                        <a *ngIf="rotaAtual == '/home/tecnologias'" routerLink="/home/contato"><button
+                                class="fade-in btn btn-primary btn-lg delay-zero">Contato</button></a>
+                    </div>
                 </div>
-                <div class="bottom mb-3">
-                    <div class="right-side col">
+                
+                <div class="bottom mb-3 col-md-7">
+                    <div class="right-side col col-lg-12">
                         <router-outlet></router-outlet>
                     </div>
-                    <ng-template #sobre>
-                        <a *ngIf="rotaAtual == '/home' || rotaAtual == '/home/contato' "
-                            routerLink="/home/sobre"><button class="fade-in btn btn-primary btn-lg delay-zero">
-                                Sobre mim</button></a>
-                    </ng-template>
-                    <a *ngIf="rotaAtual == '' " routerLink="/home/sobre"><button
-                            class="fade-in btn btn-primary btn-lg">Mais sobre mim</button></a>
-                    <a *ngIf="rotaAtual == '/home/sobre'; else sobre" routerLink="/home/habilidades"><button
-                            class="fade-in btn btn-primary btn-lg delay-zero">Competências</button></a>
-                    <a *ngIf="rotaAtual == '/home/habilidades'" routerLink="/home/tecnologias"><button
-                            class="fade-in btn btn-primary btn-lg delay-zero">Tecnologias</button></a>
-                    <a *ngIf="rotaAtual == '/home/tecnologias'" routerLink="/home/contato"><button
-                            class="fade-in btn btn-primary btn-lg delay-zero">Contato</button></a>
+                    <div class="btn" *ngIf="!isScreen768pxOrLarger()">
+
+                        <ng-template #sobre>
+                            <a *ngIf="rotaAtual == '/home' || rotaAtual == '/home/contato' "
+                                routerLink="/home/sobre"><button class="fade-in btn btn-primary btn-lg delay-zero">
+                                    Sobre mim</button></a>
+                        </ng-template>
+                        <a *ngIf="rotaAtual == '' " routerLink="/home/sobre"><button
+                                class="fade-in btn btn-primary btn-lg">Mais sobre mim</button></a>
+                        <a *ngIf="rotaAtual == '/home/sobre'; else sobre" routerLink="/home/habilidades"><button
+                                class="fade-in btn btn-primary btn-lg delay-zero">Competências</button></a>
+                        <a *ngIf="rotaAtual == '/home/habilidades'" routerLink="/home/tecnologias"><button
+                                class="fade-in btn btn-primary btn-lg delay-zero">Tecnologias</button></a>
+                        <a *ngIf="rotaAtual == '/home/tecnologias'" routerLink="/home/contato"><button
+                                class="fade-in btn btn-primary btn-lg delay-zero">Contato</button></a>
+                    </div>
                 </div>
             </div>
             <!-- <div class="right-side col">

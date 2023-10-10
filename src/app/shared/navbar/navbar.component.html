@@ -1,6 +1,6 @@
-<mat-toolbar>
-    <div class="nav-container container">
-        <div>
+<mat-toolbar class=" navbar-expand-md">
+    <div class="nav-container  container">
+        <div class="col-5">
             <button mat-button>
                 
                 <a class="" aria-label="Example icon-button with menu icon" routerLink="/home">
@@ -8,13 +8,13 @@
                 </a>
             </button>
         </div>
-        <div class="nav-links">
+        <div class="nav-links collapse navbar-collapse col-md-7">
             <ul class="nav">
-                <li class="nav-item nav-link"><a routerLink="/home/sobre">Sobre</a></li>
-                <li class="nav-item nav-link"><a routerLink="/home/habilidades">Habilidades</a></li>
-                <li class="nav-item nav-link"><a routerLink="/home/tecnologias">Tecnologias</a></li>
-                <li class="nav-item nav-link"><a routerLink="/home/portifolio">Portifólio</a></li>
-                <li class="nav-item nav-link"><a routerLink="/home/contato">Contato</a></li>
+                <li class="nav-item active"><a class="nav-link" routerLink="/home/sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/home/habilidades">Competências</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/home/tecnologias">Tecnologias</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" routerLink="/home/portifolio">Portifólio</a></li> -->
+                <li class="nav-item"><a class="nav-link" routerLink="/home/contato">Contato</a></li>
             </ul>
         </div>
     </div>

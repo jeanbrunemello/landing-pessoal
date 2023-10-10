@@ -19,6 +19,12 @@ export class HomeComponent implements OnInit {
       this.rotaAtual = this.router.url;
       console.log(this.rotaAtual)
     });
+
+    this.isScreen768pxOrLarger()
+  }
+
+  isScreen768pxOrLarger(): boolean {
+    return window.innerWidth >= 768;
   }
 
 }
