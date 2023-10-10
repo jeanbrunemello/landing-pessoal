@@ -11,7 +11,7 @@ import { ContatoComponent } from './components/contato/contato.component';
 
 const routes: Routes = [
   {
-    path: "home",
+    path: "",
     component: HomeComponent,
     children: [
       {
@@ -38,7 +38,7 @@ const routes: Routes = [
   },
   {
     path: "**",
-    redirectTo: "/home"
+    redirectTo: "/"
   }
 ];
 

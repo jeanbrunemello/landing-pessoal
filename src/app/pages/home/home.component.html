@@ -15,17 +15,17 @@
                     <p class="fade-in-down">Desenvolvedor fullstack</p>
                     <div class="btn" *ngIf="isScreen768pxOrLarger()">
                         <ng-template #sobre>
-                            <a *ngIf="rotaAtual == '/home' || rotaAtual == '/home/contato' "
-                                routerLink="/home/sobre"><button class="fade-in btn btn-primary btn-lg delay-zero">
+                            <a *ngIf="rotaAtual == '/' || rotaAtual == '/contato' "
+                                routerLink="/sobre"><button class="fade-in btn btn-primary btn-lg delay-zero">
                                     Sobre mim</button></a>
                         </ng-template>
-                        <a *ngIf="rotaAtual == '' " routerLink="/home/sobre"><button
+                        <a *ngIf="rotaAtual == '' " routerLink="/sobre"><button
                                 class="fade-in btn btn-primary btn-lg">Mais sobre mim</button></a>
-                        <a *ngIf="rotaAtual == '/home/sobre'; else sobre" routerLink="/home/habilidades"><button
+                        <a *ngIf="rotaAtual == '/sobre'; else sobre" routerLink="/habilidades"><button
                                 class="fade-in btn btn-primary btn-lg delay-zero">Competências</button></a>
-                        <a *ngIf="rotaAtual == '/home/habilidades'" routerLink="/home/tecnologias"><button
+                        <a *ngIf="rotaAtual == '/habilidades'" routerLink="/tecnologias"><button
                                 class="fade-in btn btn-primary btn-lg delay-zero">Tecnologias</button></a>
-                        <a *ngIf="rotaAtual == '/home/tecnologias'" routerLink="/home/contato"><button
+                        <a *ngIf="rotaAtual == '/tecnologias'" routerLink="/contato"><button
                                 class="fade-in btn btn-primary btn-lg delay-zero">Contato</button></a>
                     </div>
                 </div>
@@ -37,17 +37,17 @@
                     <div class="btn" *ngIf="!isScreen768pxOrLarger()">
 
                         <ng-template #sobre>
-                            <a *ngIf="rotaAtual == '/home' || rotaAtual == '/home/contato' "
-                                routerLink="/home/sobre"><button class="fade-in btn btn-primary btn-lg delay-zero">
+                            <a *ngIf="rotaAtual == '/home' || rotaAtual == '/contato' "
+                                routerLink="/sobre"><button class="fade-in btn btn-primary btn-lg delay-zero">
                                     Sobre mim</button></a>
                         </ng-template>
-                        <a *ngIf="rotaAtual == '' " routerLink="/home/sobre"><button
+                        <a *ngIf="rotaAtual == '' " routerLink="/sobre"><button
                                 class="fade-in btn btn-primary btn-lg">Mais sobre mim</button></a>
-                        <a *ngIf="rotaAtual == '/home/sobre'; else sobre" routerLink="/home/habilidades"><button
+                        <a *ngIf="rotaAtual == '/sobre'; else sobre" routerLink="/habilidades"><button
                                 class="fade-in btn btn-primary btn-lg delay-zero">Competências</button></a>
-                        <a *ngIf="rotaAtual == '/home/habilidades'" routerLink="/home/tecnologias"><button
+                        <a *ngIf="rotaAtual == '/habilidades'" routerLink="/tecnologias"><button
                                 class="fade-in btn btn-primary btn-lg delay-zero">Tecnologias</button></a>
-                        <a *ngIf="rotaAtual == '/home/tecnologias'" routerLink="/home/contato"><button
+                        <a *ngIf="rotaAtual == '/tecnologias'" routerLink="/contato"><button
                                 class="fade-in btn btn-primary btn-lg delay-zero">Contato</button></a>
                     </div>
                 </div>
