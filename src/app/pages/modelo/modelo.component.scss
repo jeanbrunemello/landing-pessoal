@@ -1,14 +1,15 @@
-.main {
-    // //background-color: #E9E9E9;
-    // background-color: rgba(0, 0, 0, 0.9);
-    // background-image: url("../../../assets/images/backgrounds/computer-tree-nature-forest-wood-technology-796217-pxhere.com.jpg");
-    // background-size: cover;
-    // background-color: red;
-    // height: 100vh;
-    // //height: calc(100vh - 78px);
-    // //position: absolute;
-    // z-index: -1;
-}
+// .main {
+//     //background-color: #E9E9E9;
+//     background-color: rgba(0, 0, 0, 0.9);
+//     background-image: url("../../../assets/images/backgrounds/computer-tree-nature-forest-wood-technology-796217-pxhere.com.jpg");
+//     background-size: cover;
+//     background-color: red;
+//     height: 100vh;
+//     //height: calc(100vh - 78px);
+//     //position: absolute;
+//     z-index: -1;
+// }
+
 .bg {
     background-color: black;
     background-image: url("../../../assets/images/backgrounds/computer-tree-nature-forest-wood-technology-796217-pxhere.com-mobilo.jpg");
@@ -28,18 +29,9 @@
     left: 0;
     z-index:-1;
 }
-.app-navbar{
-
-}
-
 .content {
     background-color: linear-gradient(185deg, rgba(255, 255, 255, 1) 1%, rgba(9, 121, 28, 1) 100%);
-    //background-color: #E9E9E9;;
-    //width: 100%;
     height: calc(100vh - 64px);
-    //padding-top: 70px;
-    //margin-left: 118px;
-    //margin-right: 118px;
     background-image: var(--gradiente-verde);
     background-clip: text;
     color: transparent;

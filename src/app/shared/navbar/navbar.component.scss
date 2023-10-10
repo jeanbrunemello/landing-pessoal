@@ -9,11 +9,9 @@ mat-toolbar {
 
 .nav-container {
     display: flex;
-    //flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    //background-color: aqua;
 
     .logo {
         font-family: 'Fleur De Leah', cursive;
@@ -32,12 +30,9 @@ mat-toolbar {
     }
 
     .nav-links {
-
         ul {
-            //background-color: red;
             width: 100%;
             text-align: right;
-
             display: flex;
             justify-content: right;
         }
@@ -47,7 +42,6 @@ mat-toolbar {
             background-clip: text;
             color: transparent;
             font-size: 15px;
-            //margin-right: -50px;
         }
 
         a:hover {
@@ -60,9 +54,7 @@ mat-toolbar {
 @media (min-width: 769px) {
     .nav-links {
         a {
-
             font-size: 20px !important;
-
         }
     }
 }

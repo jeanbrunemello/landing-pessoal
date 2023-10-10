@@ -2,9 +2,7 @@
     animation: fadeIn 0.8s ease-in-out forwards;
     background-image: var(--gradiente-verde);
     background-clip: text;
-    //height: 66vh;
     display: flex;
-    //flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -31,8 +29,6 @@
         img {
             transform: scale(1);
             transition: transform 250ms ease;
-            //filter: invert(76%) sepia(27%) saturate(311%) hue-rotate(79deg) brightness(95%) contrast(89%);
-            //background-color: white;
             background-size: 20px;
         }
 

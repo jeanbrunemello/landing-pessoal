@@ -2,11 +2,9 @@
     animation: fadeIn 0.8s ease-in-out forwards;
     background-image: var(--gradiente-verde);
     background-clip: text;
-    //background-color: red;
-    //height: 66vh;
     display: flex;
     flex-direction: column-reverse;
-    //align-items: end;
+
     justify-content: space-evenly;
 
     h2 {

@@ -30,47 +30,15 @@ const routes: Routes = [
         path: 'contato',
         component: ContatoComponent,
       },
-      // {
-      //   path: "**",
-      //   component: NotFoundComponent
-      // }
-    ]
-  },
-  {
-    path: "exibir",
-    component: ModeloComponent,
-    children: [
       {
-        path: 'sobre',
-        component: SobreComponent,
-      },
-      {
-        path: "**",
+        path: "404",
         component: NotFoundComponent
       }
     ]
   },
-  // {
-  //   path: 'catalogos',
-  //   component: MateriaisComponent,
-  //   children: [
-  //     {
-  //       path: 'exibir',
-  //       component: CatalogoComponent,
-  //     },
-  //     {
-  //       path: "exibir/:id",
-  //       component: CatalogoDocumentosComponent,
-  //     },
-  //     {
-  //       path: 'exibir/:id/documentos/:documentoId',
-  //       component: CatalogoListaComponent,
-  //     },
-  //   ]
-  // },
   {
     path: "**",
-    redirectTo: "/exibir/404"
+    redirectTo: "/home"
   }
 ];
 

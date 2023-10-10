@@ -2,7 +2,6 @@
     animation: fadeIn 0.8s ease-in-out forwards;
     background-image: var(--gradiente-verde);
     background-clip: text;
-    //height: 66vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -10,13 +9,11 @@
     justify-content: space-evenly;
     
     .top {
-
         width: 100%;
-        p {
 
+        p {
             font-size: 20px;
             line-height: 25px;
-            //text-align: center;
             font-family: roboto;
         }
     }
