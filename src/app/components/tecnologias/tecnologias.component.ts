@@ -55,7 +55,7 @@ export class TecnologiasComponent {
     },
     {
       id: 10,
-      tecnologia: ".NET",
+      tecnologia: "NET",
       logo: "../../../assets/images/logos/"
     },
     {
